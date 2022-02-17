@@ -11,9 +11,6 @@ class HelloCodi(MDApp):
         return Builder.load_file('assets/main.kv')
     def buzz(self, *args):
         sound = SoundLoader.load('assets/Bee-Sound.mp3')
-        if sound:
-            print("Sound found at %s" % sound.source)
-            print("Sound is %.3f seconds" % sound.length)
-            sound.play()
+        sound.play()
 
 HelloCodi().run()        
