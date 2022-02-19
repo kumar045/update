@@ -10,7 +10,7 @@ class HelloCodi(MDApp):
     def build(self):
         return Builder.load_file('assets/main.kv')
     def buzz(self, *args):
-        sound = SoundLoader.load('assets/Bee-Sound.mp3')
+        sound = SoundLoader.load('assets/Bee-Sound.wav')
         sound.play()
 
 HelloCodi().run()        
