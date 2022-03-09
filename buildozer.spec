@@ -13,10 +13,14 @@ package.domain = org.hello
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
+<<<<<<< HEAD
 source.include_exts = py,png,jpg,kv,atlas,ogg,mp3
+=======
+source.include_exts = py,jpg,kv,ogg
+>>>>>>> 1a616c5556df988ac5782961ebb63400692a826c
 
 # (list) List of inclusions using pattern matching
-#source.include_patterns = assets/*,images/*.png
+source.include_patterns = assets/*,images/*.jpg,images/*.ogg
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
@@ -36,7 +40,7 @@ version = 1.0.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,kivymd==0.104.2,pillow==7.0.0,playsound==1.3.0
+requirements = python3,kivy==2.0.0,kivymd==0.104.2,pillow==7.0.0,ffpyplayer,ffpyplayer_codecs
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -85,7 +89,7 @@ fullscreen = 0
 android.presplash_color = #FFFFFF
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 
 # (int) Target Android API, should be as high as possible.
 #android.api = 27
@@ -138,7 +142,7 @@ android.presplash_color = #FFFFFF
 #android.whitelist_src =
 
 # (str) Path to a custom blacklist file
-#android.blacklist_src =
+android.blacklist_src = ./blacklist.txt
 
 # (list) List of Java .jar files to add to the libs so that pyjnius can access
 # their classes. Don't add jars that you do not need, since extra jars can slow
