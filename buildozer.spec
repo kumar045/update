@@ -13,11 +13,8 @@ package.domain = org.hello
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-<<<<<<< HEAD
-source.include_exts = py,png,jpg,kv,atlas,ogg,mp3
-=======
-source.include_exts = py,jpg,kv,ogg
->>>>>>> 1a616c5556df988ac5782961ebb63400692a826c
+
+source.include_exts = py,png,jpg,kv,atlas,ogg
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = assets/*,images/*.jpg,images/*.ogg
@@ -32,7 +29,7 @@ source.include_patterns = assets/*,images/*.jpg,images/*.ogg
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 1.0.0
+version = 1.2.5
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -127,7 +124,7 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 # agreements. This is intended for automation only. If set to False,
 # the default, you will be shown the license when first running
 # buildozer.
-# android.accept_sdk_license = False
+android.accept_sdk_license =True
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity
